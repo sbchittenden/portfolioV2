@@ -11,7 +11,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.png$/,
+        test: /\.(png|svg|jpe?g|gif)$/,
         use: [
           { 
             loader: 'url-loader',
@@ -27,7 +27,7 @@ const config = {
     new webpack.ProgressPlugin(),
     new htmlWebpackPlugin({
       title: 'Amazeballs',
-      template: './src/index.html', // Load a custom template (lodash by default see the FAQ for details)
+      template: './src/index_template.html', // Load a custom template (lodash by default see the FAQ for details)
     })
   ]
 };
