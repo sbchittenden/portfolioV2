@@ -1,0 +1,53 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.main-section {
+ min-height: 60%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-blurb {
+  font-size: 0.8em;
+  width: 40%;
+  margin-left: 20%;
+  margin-right: 5%;
+  text-align: justify;
+  line-height: 1.75;
+}
+
+.space-skeleton {
+  width: 40%;
+  max-width: 400px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.section-title-wrapper {
+  align-self: flex-end;
+  background-image: url(../img/wave1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 3em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  min-height: 150px;
+}
+
+.section-title span {
+  font-weight: 900;
+  display: block;
+  margin-bottom: -10px;
+}

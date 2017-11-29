@@ -1,0 +1,8 @@
+{
+  "hello": {
+    "bio": "This is a paragraph about me and what I do and my skills and stuff like that...",
+    "section-title": ["hel", "lo"],
+    "image": "img/spaceskeleton.png",
+    "image-alt": "space skeleton illustration"
+  }
+}

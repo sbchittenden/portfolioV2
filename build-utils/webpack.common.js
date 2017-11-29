@@ -1,6 +1,8 @@
 const commonPaths = require('./common-paths.js');
 const webpack = require('webpack');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 const config = {
   entry: commonPaths.appEntry,
@@ -8,16 +10,30 @@ const config = {
     filename: 'app.js',
     path: commonPaths.outputPath
   },
+  resolve:
+    {
+      alias: {
+        'handlebars': 'handlebars/dist/handlebars.js'
+      }
+    },
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
+        test: /\.(svg)$/,
         use: [
-          { 
+          {
             loader: 'url-loader',
             options: {
               limit: 10000
             }
+          }
+        ]
+      },
+      {
+        test: /\.hbs$/,
+        use:[
+          {
+            loader: "handlebars-loader/?helperDirs[]=" + commonPaths.helperPath
           }
         ]
       }
@@ -25,10 +41,16 @@ const config = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
-    new htmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       title: 'Amazeballs',
-      template: './src/index_template.html', // Load a custom template (lodash by default see the FAQ for details)
-    })
+      template: 'src/index.html' // Load a custom template (lodash by default see the FAQ for details)
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/img',
+        to: 'img'
+      }
+    ])
   ]
 };
 

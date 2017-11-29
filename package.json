@@ -24,9 +24,12 @@
   "homepage": "https://github.com/sbchittenden/portfolioV2#readme",
   "devDependencies": {
     "compression-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.2.3",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
