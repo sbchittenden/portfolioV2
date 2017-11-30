@@ -1,0 +1,23 @@
+.project-thumbnail-wrapper {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+width: 80%;
+grid-gap: 3em;
+}
+
+.project-thumb {
+  filter: grayscale(100);
+  transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: top;
+  }
+  &:hover {
+    filter: grayscale(0);
+    transform: translate(2px ,-8px);
+    box-shadow: -8px 8px $black;
+  }
+}
