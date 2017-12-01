@@ -1,9 +1,9 @@
 <div class="project-thumbnail-wrapper">
 {{#each projects.projects}}
   <div class="project-thumb">
-  <a href="{{this.project-link}}">
+  <a href="{{this.projectLink}}">
     <span class="project-title-popup">{{this.popup}}</span>
-      <img src="{{this.image}}" alt="">
+      <img src="{{this.image}}" alt="{{this.imageAlt}}">
   </a>
   </div>
 {{/each}}
@@ -12,6 +12,6 @@
 <!-- section title footer -->
 <div class="section-title-wrapper">
   <div class="section-title">
-    {{sectionTitle projects.section-title}}
+    {{sectionTitle projects.sectionTitle}}
   </div>
 </div>

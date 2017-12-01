@@ -1,0 +1,20 @@
+{{#each projects.projects}}
+<div class="project-detail-wrapper section {{removeHash this.projectLink}}">
+    <div class="project-image">
+        <img src="{{this.image}}" alt="{{this.imageAlt}}">
+        <div class="project-information">
+            <h1>{{this.project-info.title}}</h1>
+            <p>{{this.project-info.description}}</p>
+            <div class="project-links">
+                <span>{{this.project-info.demoLink}}</span> <span>{{this.project-info.repoLink}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+<!-- section title footer -->
+<div class="section-title-wrapper">
+    <div class="section-title">
+        {{sectionTitle projects.sectionTitle}}
+    </div>
+</div>

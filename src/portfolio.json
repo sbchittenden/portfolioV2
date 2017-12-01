@@ -1,62 +1,132 @@
 {
   "hello": {
     "bio": "This is a paragraph about me and what I do and my skills and stuff like that...",
-    "section-title": ["hel", "lo"],
+    "sectionTitle": ["hel", "lo"],
     "image": "img/sbc.png",
-    "image-alt": "sam's face"
+    "imageAlt": "sam's face"
   },
   "projects": {
-    "section-title": ["pro", "jec", "ts"],
+    "sectionTitle": ["pro", "jec", "ts"],
     "projects": [
       {
         "image": "https://placem.at/things?w=400;h=400&random=1",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project1"
+        "projectLink": "#project1",
+        "projectInfo" : {
+          "title": "Amazeballs Project #1",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=2",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project2"
+        "projectLink": "#project2",
+        "projectInfo" : {
+          "title": "Amazeballs Project #2",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=3",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project3"
+        "projectLink": "#project3",
+        "projectInfo": {
+          "title": "Amazeballs Project #3",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=4",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project4"
+        "projectLink": "#project4",
+        "projectInfo" : {
+          "title": "Amazeballs Project #4",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=5",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project5"
+        "projectLink": "#project5",
+        "projectInfo" : {
+          "title": "Amazeballs Project #5",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=6",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project6"
+        "projectLink": "#project6",
+        "projectInfo" : {
+          "title": "Amazeballs Project #6",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=7",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project7"
+        "projectLink": "#project7",
+        "projectInfo" : {
+          "title": "Amazeballs Project #7",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=8",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project8"
+        "projectLink": "#project8",
+        "projectInfo" : {
+          "title": "Amazeballs Project #8",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=9",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project9"
+        "projectLink": "#project9",
+        "projectInfo" : {
+          "title": "Amazeballs Project #9",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=10",
+        "imageAlt": "project thumbnail",
         "popup": "A Really Cool Project",
-        "project-link": "#project10"
+        "projectLink": "#project10",
+        "projectInfo" : {
+          "title": "Amazeballs Project #10",
+          "description": "This is a really cool project that I made",
+          "repoLink": "path/to/github/repo",
+          "demoLink": "path/to/demo"
+        }
       }
     ]
   }

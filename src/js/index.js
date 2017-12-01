@@ -3,6 +3,9 @@ import '../scss/main.scss';
 var template = require('./indexTemplate.hbs');
 var portfolioJSON = require('../portfolio.json');
 
+
+
+
 var waveMenu = document.querySelector('.wave-menu');
 var hamburger = document.querySelector('.h-to-x');
 var contentEntry = document.querySelector('.content-wrapper');
@@ -33,12 +36,18 @@ window.onhashchange = function renderView(e) {
   
   var targetPage = document.querySelector(`.${newHash}`);
   
-  
-  //swap visiblity
+  //swap section visiblity
   previousPage.classList.remove('--is-visible');
   targetPage.classList.add('--is-visible');
   
 }
+
+
+/* ====================================================== 
+
+function definitions
+
+======================================================== */
 
 function getNewHash(e) {
   return e.newURL.substr(e.newURL.indexOf('#') + 1);
