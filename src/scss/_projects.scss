@@ -1,23 +1,75 @@
 .project-thumbnail-wrapper {
   display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-width: 80%;
-grid-gap: 3em;
+  // grid-template-columns: repeat(5, minmax(125px, 1fr));
+  grid-template-areas: ". a a . c . ." 
+                       "j a a e e f ."
+                       ". g h e e i d"
+                       ". . . b . . .";
+  width: 75%;
+  max-width: 1200px;
+  grid-gap: 3em;
 }
 
 .project-thumb {
+  position: relative;
   filter: grayscale(100);
   transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
+  &:nth-child(1) {
+    grid-area: a;
+  }
+  &:nth-child(2) {
+    grid-area: b;
+  }
+  &:nth-child(3) {
+    grid-area: c;
+  }
+  &:nth-child(4) {
+    grid-area: d;
+  }
+  &:nth-child(5) {
+    grid-area: e;
+  }
+  &:nth-child(6) {
+    grid-area: f;
+  }
+  &:nth-child(7) {
+    grid-area: g;
+  }
+  &:nth-child(8) {
+    grid-area: h;
+  }
+  &:nth-child(9) {
+    grid-area: i;
+  }
+  &:nth-child(10) {
+    grid-area: j;
+  }
   & img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
     vertical-align: top;
+    overflow: hidden;
   }
   &:hover {
     filter: grayscale(0);
     transform: translate(2px ,-8px);
     box-shadow: -8px 8px $black;
+    & .project-title-popup {
+      opacity: 1;
+    }
   }
+}
+
+.project-title-popup {
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  display: block;
+  background-color: $white;
+  padding: 0.5em 1em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms 150ms ease;
 }

@@ -9,28 +9,44 @@
     "section-title": ["pro", "jec", "ts"],
     "projects": [
       {
-        "image": "https://placem.at/things?w=250;h=250&random=1"
+        "image": "https://placem.at/things?w=400;h=400&random=1",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=2"
+        "image": "https://placem.at/things?w=400;h=400&random=2",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=3"
+        "image": "https://placem.at/things?w=400;h=400&random=3",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=4"
+        "image": "https://placem.at/things?w=400;h=400&random=4",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=5"
+        "image": "https://placem.at/things?w=400;h=400&random=5",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=6"
+        "image": "https://placem.at/things?w=400;h=400&random=6",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=7"
+        "image": "https://placem.at/things?w=400;h=400&random=7",
+        "popup": "A Really Cool Project"
       },
       {
-        "image": "https://placem.at/things?w=250;h=250&random=8"
+        "image": "https://placem.at/things?w=400;h=400&random=8",
+        "popup": "A Really Cool Project"
+      },
+      {
+        "image": "https://placem.at/things?w=400;h=400&random=9",
+        "popup": "A Really Cool Project"
+      },
+      {
+        "image": "https://placem.at/things?w=400;h=400&random=10",
+        "popup": "A Really Cool Project"
       }
     ]
   }
