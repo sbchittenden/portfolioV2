@@ -1,8 +1,10 @@
 <div class="project-thumbnail-wrapper">
 {{#each projects.projects}}
   <div class="project-thumb">
+  <a href="{{this.project-link}}">
     <span class="project-title-popup">{{this.popup}}</span>
       <img src="{{this.image}}" alt="">
+  </a>
   </div>
 {{/each}}
 </div>

@@ -1,18 +1,49 @@
 .project-thumbnail-wrapper {
   display: grid;
   // grid-template-columns: repeat(5, minmax(125px, 1fr));
-  grid-template-areas: ". a a . c . ." 
-                       "j a a e e f ."
-                       ". g h e e i d"
-                       ". . . b . . .";
-  width: 75%;
+  grid-template-areas: ". a a . b . ." 
+                       "c a a d d e ."
+                       ". f g d d h i"
+                       ". . . j . . .";
   max-width: 1200px;
-  grid-gap: 3em;
+  grid-gap: 1.3em;
+  margin: 1em 3em; 
+  @media screen and (max-width: $break-large) {
+    grid-template-areas: ". a a . b . ." 
+                         "c a a d d e ."
+                         ". f g d d h ."
+                         ". . i j . . .";
+  }
+  @media screen and (max-width: $break-med-lg) {
+    grid-template-areas: "a a b c ." 
+                         "a a d d e"
+                         "f g d d h"
+                         ". i j . .";
+  }
+  @media screen and (max-width: $break-med-sm) {
+    grid-template-areas: "a a b c" 
+                         "a a d d"
+                         "e f d d"
+                         "g h i j";
+  }
+  @media screen and (max-width: $break-small) {
+    grid-template-areas: "a b" 
+                         "c d"
+                         "e f"
+                         "g h"
+                         "i j";
+    margin: 1em 1.5em;
+  }
+  @media screen and (max-width: $break-mobile) {
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j";
+    margin: 1em 1.5em;
+  }
 }
 
 .project-thumb {
   position: relative;
   filter: grayscale(100);
+  cursor: pointer;
   transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
   &:nth-child(1) {
     grid-area: a;
@@ -44,6 +75,10 @@
   &:nth-child(10) {
     grid-area: j;
   }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
   & img {
     height: 100%;
     width: 100%;
@@ -58,18 +93,27 @@
     box-shadow: -8px 8px $black;
     & .project-title-popup {
       opacity: 1;
+      transform: rotate(0deg) translateX(0);
     }
   }
 }
 
 .project-title-popup {
   position: absolute;
-  top: 20%;
-  left: -20%;
+  top: 2rem;
+  left: -1.5rem;
   display: block;
   background-color: $white;
-  padding: 0.5em 1em;
+  padding: 0.5em;
+  width: 8em;
+  text-transform: uppercase;
   opacity: 0;
+  transform: rotate(-5deg) translateX(-1em);
+  transform-origin: right top;
   pointer-events: none;
-  transition: opacity 250ms 150ms ease;
+  box-shadow: -4px 4px $black;
+  transition: opacity 250ms 150ms ease, transform 300ms 75ms cubic-bezier(.48,.2,.21,1.73);
+  @media screen and (max-width: $break-med-sm) {
+    font-size: 0.8em;
+  }
 }

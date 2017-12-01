@@ -10,43 +10,53 @@
     "projects": [
       {
         "image": "https://placem.at/things?w=400;h=400&random=1",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project1"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=2",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project2"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=3",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project3"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=4",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project4"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=5",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project5"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=6",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project6"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=7",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project7"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=8",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project8"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=9",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project9"
       },
       {
         "image": "https://placem.at/things?w=400;h=400&random=10",
-        "popup": "A Really Cool Project"
+        "popup": "A Really Cool Project",
+        "project-link": "#project10"
       }
     ]
   }
