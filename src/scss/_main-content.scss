@@ -6,11 +6,15 @@
 }
 
 .section {
- min-height: calc(100vh - 5em);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+  display: none;
+  &.--is-visible {
+    // visibility: visible;
+    min-height: calc(100vh - 5em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 }
 
 .section-title-wrapper {
