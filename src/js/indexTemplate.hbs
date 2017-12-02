@@ -6,6 +6,8 @@
   {{> hbPartials/projects}}
 </div>
 
-<div class="project-detail">
+{{#each projects.projects}}
+<div class="project-detail section {{removeHash this.projectLink}}">
   {{> hbPartials/projectDetail}}
 </div>
+{{/each}}

@@ -14,8 +14,9 @@
         "popup": "A Really Cool Project",
         "projectLink": "#project1",
         "projectInfo" : {
-          "title": "Amazeballs Project #1",
-          "description": "This is a really cool project that I made",
+          "title": "Simple Forum",
+          "techUsed": ["CSS", "HTML", "jQuery"],
+          "description": "A simple forum built with vanilla CSS and HTML along with jQuery. The initial dummy post data is sourced from a JSON file and each post can be commented on. New comments appear in the right sidebar and clicking a comment will open and scroll to the corresponding post.",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
         }
@@ -27,6 +28,7 @@
         "projectLink": "#project2",
         "projectInfo" : {
           "title": "Amazeballs Project #2",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -39,6 +41,7 @@
         "projectLink": "#project3",
         "projectInfo": {
           "title": "Amazeballs Project #3",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -51,6 +54,7 @@
         "projectLink": "#project4",
         "projectInfo" : {
           "title": "Amazeballs Project #4",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -63,6 +67,7 @@
         "projectLink": "#project5",
         "projectInfo" : {
           "title": "Amazeballs Project #5",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -75,6 +80,7 @@
         "projectLink": "#project6",
         "projectInfo" : {
           "title": "Amazeballs Project #6",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -87,6 +93,7 @@
         "projectLink": "#project7",
         "projectInfo" : {
           "title": "Amazeballs Project #7",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -99,6 +106,7 @@
         "projectLink": "#project8",
         "projectInfo" : {
           "title": "Amazeballs Project #8",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -111,6 +119,7 @@
         "projectLink": "#project9",
         "projectInfo" : {
           "title": "Amazeballs Project #9",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"
@@ -123,6 +132,7 @@
         "projectLink": "#project10",
         "projectInfo" : {
           "title": "Amazeballs Project #10",
+          "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "This is a really cool project that I made",
           "repoLink": "path/to/github/repo",
           "demoLink": "path/to/demo"

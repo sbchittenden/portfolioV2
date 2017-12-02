@@ -13,6 +13,9 @@ var contentEntry = document.querySelector('.content-wrapper');
 
 contentEntry.innerHTML = template(portfolioJSON);
 
+
+
+
 hamburger.addEventListener('click', function () {
   toggleMenu();
 });
@@ -23,38 +26,52 @@ waveMenu.addEventListener('click', function(e){
   }
 });
 
+window.addEventListener('hashchange', renderView);
 
-
-window.onhashchange = function renderView(e) {
-  e.preventDefault();
-
-  var pages = queryPages();
-  var newHash = getNewHash(e);
-  var oldHash = getOldHash(e);
-  
-  var previousPage = Array.from(pages).filter(item => item.classList.contains(oldHash))[0] || document.querySelector(`.hello`);
-  
-  var targetPage = document.querySelector(`.${newHash}`);
-  
-  //swap section visiblity
-  previousPage.classList.remove('--is-visible');
-  targetPage.classList.add('--is-visible');
-  
-}
-
-
-/* ====================================================== 
+window.onload = function() {
+  renderView();
+};
+/* ======================================================
 
 function definitions
 
 ======================================================== */
 
+function renderView(e) {
+
+  // e.preventDefault();
+
+  var pages = queryPages();
+  var newHash = getNewHash(e);
+  var oldHash = getOldHash(e);
+  var targetPage;
+
+  var previousPage = Array.from(pages).filter(item => item.classList.contains(oldHash))[0] || document.querySelector(`.hello`);
+
+  if (newHash) {
+    targetPage = document.querySelector(`.${newHash}`);
+  } else {
+    if (window.location.hash !== '') {
+      targetPage = document.querySelector(`.${window.location.hash.substr(1)}`);
+    } else {
+      targetPage = document.querySelector(`.hello`);
+    }
+  }
+
+  //swap section visiblity
+  previousPage.classList.remove('--is-visible');
+  targetPage.classList.add('--is-visible');
+
+}
+
 function getNewHash(e) {
-  return e.newURL.substr(e.newURL.indexOf('#') + 1);
+  if (e !== undefined) {
+    return e.newURL.substr(e.newURL.indexOf('#') + 1);
+  }
 }
 
 function getOldHash(e) {
-  if (e.oldURL.indexOf('#') !== -1) {
+  if (e && e.oldURL.indexOf('#') !== -1 ) {
     return e.oldURL.substr(e.oldURL.indexOf('#') + 1) || 'hello';
   }
   return null;

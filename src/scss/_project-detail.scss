@@ -1,0 +1,84 @@
+.project-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 850px;
+}
+
+.project-image {
+  box-shadow: -16px 16px $black;
+  flex: 1;
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+}
+
+.project-information {
+  padding-left: 2em;
+  flex: 1;
+  & h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0.3em 0 1em 0;
+  }
+  & p {
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 1.5em;
+  }
+}
+
+.project-links {
+  display: flex;
+  & li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    transition: color 250ms ease;
+    & a {
+      text-decoration: none;
+      color: inherit;
+      padding-left: 0.1em;
+    }
+    &:hover {
+      color: $menu-pink;
+    }
+  }
+}
+
+%nav-arrow {
+  position: absolute;
+  align-self: center;
+  & i {
+    font-size: 36px;
+  }
+}
+
+.nav-arrow__next {
+  @extend %nav-arrow;
+  right: 15px;
+}
+
+.nav-arrow__prev {
+  @extend %nav-arrow;
+  left: 25px;
+}
+
+
+.github-link {
+  margin-left: 1.5em;
+}
+
+.material-icons.md-32 {
+  font-size: 32px;
+}

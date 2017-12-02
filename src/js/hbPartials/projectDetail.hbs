@@ -1,20 +1,28 @@
-{{#each projects.projects}}
-<div class="project-detail-wrapper section {{removeHash this.projectLink}}">
+
+<div class="project-detail-wrapper">
+    <div class="nav-arrow__prev">
+        <a href="{{setProject @index direction="prev"}}"><i class="material-icons">chevron_left</i></a>
+    </div>
     <div class="project-image">
         <img src="{{this.image}}" alt="{{this.imageAlt}}">
+    </div>
         <div class="project-information">
-            <h1>{{this.project-info.title}}</h1>
-            <p>{{this.project-info.description}}</p>
-            <div class="project-links">
-                <span>{{this.project-info.demoLink}}</span> <span>{{this.project-info.repoLink}}</span>
-            </div>
+            <h1>{{this.projectInfo.title}}</h1>
+            <h2>{{hyphenateList this.projectInfo.techUsed}}</h2>
+            <p>{{this.projectInfo.description}}</p>
+                <ul class="project-links">
+                    <li class="demo-link"><i class="material-icons md-32">open_in_new</i><a href="{{this.projectInfo.demoLink}}" target="_blank">DEMO</a></li>
+                    <li class="github-link"><i class="material-icons md-32">code</i><a href="{{this.projectInfo.repoLink}}" target="_blank">SOURCE CODE</a></li>
+                </ul>
         </div>
+    <div class="nav-arrow__next">
+        <a href="{{setProject @index direction="next"}}"><i class="material-icons">chevron_right</i></a>
     </div>
 </div>
-{{/each}}
+
 <!-- section title footer -->
 <div class="section-title-wrapper">
     <div class="section-title">
-        {{sectionTitle projects.sectionTitle}}
+        {{sectionTitle sectionTitle}}
     </div>
 </div>
