@@ -49,10 +49,7 @@
   position: relative;
   filter: grayscale(100);
   cursor: pointer;
-  transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
-  // &.--fade-in {
-  //   @include shrink;
-  // }
+  // transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
   &:nth-child(1) {
     grid-area: a;
     @include popIn;
@@ -104,11 +101,17 @@
     object-position: center;
     vertical-align: top;
     overflow: hidden;
-  }
-  &:hover {
+    transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
+     &:hover {
     filter: grayscale(0);
     transform: translate(2px ,-8px);
     box-shadow: -8px 8px $black;
+     }
+  }
+  &:hover {
+    // filter: grayscale(0);
+    // transform: translate(2px ,-8px);
+    // box-shadow: -8px 8px $black;
     & .project-title-popup {
       opacity: 1;
       transform: rotate(0deg) translateX(0);
@@ -130,6 +133,7 @@
   transform-origin: right top;
   pointer-events: none;
   box-shadow: -4px 4px $black;
+  z-index: 10;
   transition: opacity 250ms 150ms ease, transform 300ms 75ms cubic-bezier(.48,.2,.21,1.73);
   @media screen and (max-width: $break-med-sm) {
     font-size: 0.8em;
