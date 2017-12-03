@@ -1,4 +1,4 @@
-@mixin popIn($speed: 400ms, $delay: random()+s) {
+@mixin popIn($speed: 600ms, $delay: random()+s) {
   animation: fadeInAndGrow $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
 }
 

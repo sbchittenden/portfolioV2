@@ -1,0 +1,59 @@
+form {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  & label {
+    margin: 1em 0;
+  }
+  & input {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px $black;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 0;
+    text-transform: uppercase;
+    transition: padding 300ms ease;
+    &:focus {
+      padding: 2em 0;
+      border-bottom: solid 3px $black;
+    }
+  }
+  & textarea {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px $black;
+    resize: none;
+    font-size: 1.3em;
+    font-family: inherit;
+    font-weight: 900;
+    padding: 0;
+    text-transform: uppercase;
+    transition: padding 300ms ease;
+    &:focus {
+      padding: 2em 0;
+      border-bottom: solid 3px $black;
+    }
+  }
+  & button {
+    outline: none;
+    font-size: 1.3em;
+    font-weight: 900;
+    border: solid 1px $black;
+    background-color: transparent;
+    padding: 1em 0.5em 0.5em 4em;
+    margin-left: auto;
+    margin-top: 2em;
+    cursor: pointer;
+    text-align: right;
+    transition: box-shadow 300ms ease, color 250ms ease;
+    &:hover {
+      box-shadow: -4px 4px $black;
+    }
+    &:active {
+      color: $white;
+      background-color: $black;
+      box-shadow: -4px 4px $menu-pink;
+    }
+  }
+}

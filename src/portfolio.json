@@ -139,5 +139,8 @@
         }
       }
     ]
+  },
+  "contact": {
+    "sectionTitle": ["con", "tac", "t"]
   }
 }

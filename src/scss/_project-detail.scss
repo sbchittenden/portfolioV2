@@ -6,13 +6,13 @@
 }
 
 .project-image {
-  box-shadow: -16px 16px $black;
   flex: 1;
   opacity: 0;
   @include inDown(600ms, 0s);
   & img {
     width: 100%;
     height: auto;
+    box-shadow: -16px 16px $black;
     object-fit: cover;
     vertical-align: top;
   }
@@ -75,7 +75,7 @@
   position: absolute;
   align-self: center;
   & i {
-    font-size: 36px;
+    font-size: 48px;
     color: $black;
     transition: color 250ms ease;
     &:hover {
