@@ -1,0 +1,19 @@
+@mixin popIn($speed: 400ms, $delay: random()+s) {
+  animation: fadeInAndGrow $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
+}
+
+@mixin inUp($speed: 400ms, $delay: random()+s) {
+  animation: staggerInUp $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
+}
+
+@mixin inDown($speed: 400ms, $delay: random()+s) {
+  animation: staggerInDown $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
+}
+
+@mixin rotateUp($speed: 400ms, $delay: random()+s) {
+  animation: rotateInUp $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
+}
+
+@mixin fromLeftBig($speed: 400ms, $delay: random()+s) {
+  animation: slideFromLeftBig $speed $delay cubic-bezier(.55,.11,.13,1.91) forwards;
+}

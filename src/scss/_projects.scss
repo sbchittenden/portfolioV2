@@ -1,6 +1,4 @@
-@mixin shrink {
-  animation: fadeInAndGrow 400ms random()+s cubic-bezier(.55,.11,.13,1.91) forwards;
-}
+
 
 .project-thumbnail-wrapper {
   display: grid;
@@ -57,43 +55,43 @@
   // }
   &:nth-child(1) {
     grid-area: a;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(2) {
     grid-area: b;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(3) {
     grid-area: c;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(4) {
     grid-area: d;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(5) {
     grid-area: e;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(6) {
     grid-area: f;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(7) {
     grid-area: g;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(8) {
     grid-area: h;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(9) {
     grid-area: i;
-    @include shrink;
+    @include popIn;
   }
   &:nth-child(10) {
     grid-area: j;
-    @include shrink;
+    @include popIn;
   }
   & a {
     text-decoration: none;

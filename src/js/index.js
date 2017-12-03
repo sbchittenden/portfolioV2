@@ -29,8 +29,6 @@ waveMenu.addEventListener('click', function(e){
 window.addEventListener('hashchange', renderView);
 
 window.onload = function() {
-  // var pages = queryPages();
-  // Array.from(pages).forEach(item => item.classList.contains('--is-visible') ? item.classList.remove('--is-visible') : console.log('poop'));
   renderView();
 };
 /* ======================================================
@@ -67,10 +65,14 @@ function renderView(e) {
 
 }
 
+// function getNewHash(e) {
+//   if (e !== undefined) {
+//     return e.newURL.substr(e.newURL.indexOf('#') + 1);
+//   }
+// }
+
 function getNewHash(e) {
-  if (e !== undefined) {
-    return e.newURL.substr(e.newURL.indexOf('#') + 1);
-  }
+  return e ? e.newURL.substr(e.newURL.indexOf('#') + 1) : null;
 }
 
 function getOldHash(e) {
@@ -79,6 +81,7 @@ function getOldHash(e) {
   }
   return null;
 }
+
 
 function queryPages() {
   return document.getElementsByClassName('section');
