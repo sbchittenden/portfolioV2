@@ -29,6 +29,8 @@ waveMenu.addEventListener('click', function(e){
 window.addEventListener('hashchange', renderView);
 
 window.onload = function() {
+  // var pages = queryPages();
+  // Array.from(pages).forEach(item => item.classList.contains('--is-visible') ? item.classList.remove('--is-visible') : console.log('poop'));
   renderView();
 };
 /* ======================================================
@@ -61,6 +63,7 @@ function renderView(e) {
   //swap section visiblity
   previousPage.classList.remove('--is-visible');
   targetPage.classList.add('--is-visible');
+
 
 }
 

@@ -11,7 +11,7 @@
       {
         "image": "https://placem.at/things?w=400;h=400&random=1",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Simple Forum",
         "projectLink": "#project1",
         "projectInfo" : {
           "title": "Simple Forum",

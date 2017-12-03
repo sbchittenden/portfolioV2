@@ -61,6 +61,11 @@
   align-self: center;
   & i {
     font-size: 36px;
+    color: $black;
+    transition: color 250ms ease;
+    &:hover {
+      color: $menu-pink;
+    }
   }
 }
 
