@@ -34,7 +34,7 @@
   &:hover {
     cursor: pointer;
     &:not(.--is-open):before {
-      top: -3px;
+      top: -2px;
     }
     &:not(.--is-open):after {
       bottom: -3px;
