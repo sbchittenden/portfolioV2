@@ -47,7 +47,6 @@
 .project-thumb {
   opacity: 0;
   position: relative;
-  filter: grayscale(100);
   cursor: pointer;
   // transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
   &:nth-child(1) {
@@ -101,11 +100,13 @@
     object-position: center;
     vertical-align: top;
     overflow: hidden;
+    filter: grayscale(0.75);
+    cursor: pointer;
     transition: box-shadow 250ms linear, transform 250ms ease-out, filter 250ms ease;
      &:hover {
-    filter: grayscale(0);
-    transform: translate(2px ,-8px);
-    box-shadow: -8px 8px $black;
+      filter: grayscale(0);
+      transform: translate(2px ,-8px);
+      box-shadow: -8px 8px $black;
      }
   }
   &:hover {
@@ -115,6 +116,7 @@
     & .project-title-popup {
       opacity: 1;
       transform: rotate(0deg) translateX(0);
+      cursor: pointer;
     }
   }
 }

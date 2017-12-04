@@ -29,6 +29,13 @@ waveMenu.addEventListener('click', function(e){
 window.addEventListener('hashchange', renderView);
 
 window.onload = function() {
+  var contactForm = document.getElementById('contact');
+  // disable contact form for now...
+  contactForm.addEventListener('submit', function () {
+    event.preventDefault();
+  });
+
+
   renderView();
 };
 /* ======================================================

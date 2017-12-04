@@ -1,6 +1,6 @@
 {
   "hello": {
-    "bio": "This is a paragraph about me and what I do and my skills and stuff like that...",
+    "bio": "My name is Sam. I am a designer and developer living and working in Colorado. I have a background in print design and illustration and I currently work as the in-house graphic designer for Aspen Santa Fe Ballet, a contemporary ballet company I danced with for 15 years. I am an avid rock climber and in my spare time, if I'm not playing the drums, I can be found dangling from one of the local cliffs.",
     "sectionTitle": ["hel", "lo"],
     "image": "img/sbc.png",
     "imageAlt": "sam's face"
@@ -9,133 +9,133 @@
     "sectionTitle": ["pro", "jec", "ts"],
     "projects": [
       {
-        "image": "https://placem.at/things?w=400;h=400&random=1",
-        "imageAlt": "project thumbnail",
+        "image": "SimpleForum.png",
+        "imageAlt": "simple forum project thumbnail",
         "popup": "Simple Forum",
         "projectLink": "#project1",
         "projectInfo" : {
           "title": "Simple Forum",
           "techUsed": ["CSS", "HTML", "jQuery"],
           "description": "A simple forum built with vanilla CSS and HTML along with jQuery. The initial dummy post data is sourced from a JSON file and each post can be commented on. New comments appear in the right sidebar and clicking a comment will open and scroll to the corresponding post.",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/Advanced_jQuery",
+          "demoLink": "https://sbchittenden.github.io/BA-Demos/Advanced_jQuery/project-2-simple-forum/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=2",
+        "image": "Calculator.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Retro Calculator",
         "projectLink": "#project2",
         "projectInfo" : {
-          "title": "Amazeballs Project #2",
+          "title": "Retro Calculator",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "Retro calculator built mainly as a CSS exercise. Long live skeuomorphism! Not really.",
+          "repoLink": "https://github.com/sbchittenden/MD-calculator",
+          "demoLink": "https://sbchittenden.github.io/MD-calculator/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=3",
+        "image": "ConwaysGOL.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Conway's Game of Life",
         "projectLink": "#project3",
         "projectInfo": {
-          "title": "Amazeballs Project #3",
+          "title": "Conway's Game of Life",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "A JavaScript implementation of Conway's Game of Life. Gameboard dimensions and cell size can be specified before seeding a new game. Fun to watch.",
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/Conways_GOL",
+          "demoLink": "http://difficult-bun.surge.sh/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=4",
+        "image": "DragDropPuzzle.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Drag and Drop Puzzle",
         "projectLink": "#project4",
         "projectInfo" : {
-          "title": "Amazeballs Project #4",
+          "title": "Drag and Drop Puzzle",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "A puzzle built using the drag and drop API. Features 3 different difficulty levels and a pretty rocking reward for completion.",
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/JS-Events/puzzle",
+          "demoLink": "https://sbchittenden.github.io/BA-Demos/JS-Events/puzzle/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=5",
+        "image": "EurekaUIFramework.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Eureka UI Framework",
         "projectLink": "#project5",
         "projectInfo" : {
-          "title": "Amazeballs Project #5",
+          "title": "Eureka UI Framework",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "Built for a Bov Academy hackathon with a team of other BA students. In addition to designing the UI, I built out the carousels, alerts, collapse, pagination, and dropdown components. I also developed an unique component called \"Bookmarklet\" which allows the user to highlight and bookmark sections of text.",
+          "repoLink": "https://github.com/sbchittenden/ba-ui-framework-eureka",
+          "demoLink": "https://aashishnagpal.github.io/ba-ui-framework-eureka/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=6",
+        "image": "Forms.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Forms",
         "projectLink": "#project6",
         "projectInfo" : {
-          "title": "Amazeballs Project #6",
-          "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "title": "Many Styled Forms",
+          "techUsed": ["CSS", "HTML"],
+          "description": "A variety of styled forms including some basic client-side validation. Click the demo link to see more.",
+          "repoLink": "https://github.com/sbchittenden/MD-web-forms",
+          "demoLink": "https://sbchittenden.github.io/MD-Intro-to-CSS-website/forms.html"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=7",
+        "image": "LinkHarvester.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Link Harvester",
         "projectLink": "#project7",
         "projectInfo" : {
-          "title": "Amazeballs Project #7",
+          "title": "Link Harvester",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "A simple link harvester that will scrape the provided text for both URLs and email addresses.",
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/Regular-Expressions/project-1",
+          "demoLink": "https://sbchittenden.github.io/BA-Demos/Regular-Expressions/project-1/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=8",
+        "image": "PortfolioV1.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Portfolio version 1.0",
         "projectLink": "#project8",
         "projectInfo" : {
-          "title": "Amazeballs Project #8",
+          "title": "JavaScript Free(ish) Portfolio",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "My previous developer portfolio site that uses only CSS and HTML for the majority of the UI with some JS sprinkled in for little additions such as the smooth-scroll, sticky sidebar, and Numbers API project. There are a variety of showcased projects as well as some nifty skills graphs.",
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/AJAX/AJAX-project-2",
+          "demoLink": "http://questionable-bit.surge.sh/"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=9",
+        "image": "BAStudents.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Bov Academy Student Site",
         "projectLink": "#project9",
         "projectInfo" : {
-          "title": "Amazeballs Project #9",
+          "title": "Bov Academy Student Website",
           "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "description": "Build with a small team of fellow Bov Academy students from the ground up. The only framework used is the GreenSock Animation Platform for the grid to modal animations (and a sprinkling of jQuery). Features a grid of student images that link to a small profile modal for each student. The grid features custom GIF animations on hover as well as HTML5 video embeds.",
+          "repoLink": "private",
+          "demoLink": "https://students.bovacademy.com"
         }
       },
       {
-        "image": "https://placem.at/things?w=400;h=400&random=10",
+        "image": "TicTacToe.png",
         "imageAlt": "project thumbnail",
-        "popup": "A Really Cool Project",
+        "popup": "Tic-Tac-Toe",
         "projectLink": "#project10",
         "projectInfo" : {
-          "title": "Amazeballs Project #10",
-          "techUsed": ["CSS", "HTML", "JavaScript"],
-          "description": "This is a really cool project that I made",
-          "repoLink": "path/to/github/repo",
-          "demoLink": "path/to/demo"
+          "title": "Tic-Tac-Toe game",
+          "techUsed": ["CSS", "HTML", "jQuery"],
+          "description": "A simple tic-tac-toe game built with jQuery. If you lose to the computer, you will be shamed (mildly).",
+          "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/Mastering%20jQuery/project-3",
+          "demoLink": "https://sbchittenden.github.io/BA-Demos/Mastering%20jQuery/project-3/"
         }
       }
     ]

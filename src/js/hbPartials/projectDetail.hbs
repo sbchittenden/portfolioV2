@@ -4,7 +4,7 @@
         <a href="{{setProject @index direction="prev"}}"><i class="material-icons">chevron_left</i></a>
     </div>
     <div class="project-image">
-        <img src="{{this.image}}" alt="{{this.imageAlt}}">
+        <img src="{{addPath this.image dir="../../img/projects/"}}" alt="{{this.imageAlt}}">
     </div>
         <div class="project-information">
             <h1>{{this.projectInfo.title}}</h1>
