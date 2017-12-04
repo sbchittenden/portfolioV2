@@ -109,7 +109,7 @@
           "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "My previous developer portfolio site that uses only CSS and HTML for the majority of the UI with some JS sprinkled in for little additions such as the smooth-scroll, sticky sidebar, and Numbers API project. There are a variety of showcased projects as well as some nifty skills graphs.",
           "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/AJAX/AJAX-project-2",
-          "demoLink": "http://questionable-bit.surge.sh/"
+          "demoLink": "https://sbchittenden.github.io/BA-Demos/AJAX/AJAX-project-2/index.html"
         }
       },
       {
