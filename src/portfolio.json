@@ -44,7 +44,7 @@
           "techUsed": ["CSS", "HTML", "JavaScript"],
           "description": "A JavaScript implementation of Conway's Game of Life. Gameboard dimensions and cell size can be specified before seeding a new game. Fun to watch.",
           "repoLink": "https://github.com/sbchittenden/BA-Demos/tree/master/Conways_GOL",
-          "demoLink": "http://difficult-bun.surge.sh/"
+          "demoLink": "http://sbc-gol.surge.sh/"
         }
       },
       {
