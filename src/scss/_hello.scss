@@ -3,6 +3,9 @@
   text-align: justify;
   line-height: 1.75;
   width: 50%;
+  @media screen and (max-width: 720px) {
+    width: 80%;
+  }
 }
 
 .face {
@@ -19,4 +22,7 @@ overflow: hidden;
     margin-bottom: -3px;
   }
   animation: slideInLeft 400ms forwards ease-out;
+  @media screen and (max-width: 720px) {
+    width: 35%;
+  }
 }

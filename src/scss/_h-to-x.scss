@@ -18,6 +18,7 @@
     }
     &:before {
       top: 0.5em;
+      left: 0;
       background-color: white;
       transform: rotate(45deg);
       transition: top 0.15s linear, transform 0.15s 0.15s ease-out,
@@ -25,6 +26,7 @@
     }
     &:after {
       bottom: 0.75em;
+      left: 0;
       background-color: white;
       transform: rotate(-45deg);
       transition: bottom 0.15s linear, transform 0.15s 0.15s ease-out,
@@ -49,6 +51,7 @@
   border-radius: 0.1em;
   display: block;
   top: 50%;
+  left: 0;
   opacity: 1;
   transition: opacity 0.25s 0.2s linear, background-color 0.3s 0.2s ease-out;
 }
