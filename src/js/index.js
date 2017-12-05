@@ -7,41 +7,39 @@ var waveMenu = document.querySelector('.wave-menu');
 var hamburger = document.querySelector('.h-to-x');
 var contentEntry = document.querySelector('.content-wrapper');
 
-contentEntry.innerHTML = template(portfolioJSON);
-
-hamburger.addEventListener('click', function () {
-  toggleMenu();
-});
-
-waveMenu.addEventListener('click', function(e){
-  if (e.target.nodeName === 'A') {
-    toggleMenu();
-  }
-});
-
-window.addEventListener('hashchange', renderView);
-
 window.onload = function() {
+  init();
+};
+
+/* ======================================================
+function definitions
+======================================================== */
+
+function init() {
+  contentEntry.innerHTML = template(portfolioJSON);
+
+  hamburger.addEventListener('click', function () {
+    toggleMenu();
+  });
+
+  waveMenu.addEventListener('click', function (e) {
+    if (e.target.nodeName === 'A') {
+      toggleMenu();
+    }
+  });
+
   var contactForm = document.getElementById('contact');
   // disable contact form for now...
   contactForm.addEventListener('submit', function () {
     event.preventDefault();
   });
 
+  window.addEventListener('hashchange', renderView);
 
   renderView();
-};
-/* ======================================================
-
-function definitions
-
-======================================================== */
-
+}
 
 function renderView(e) {
-
-  // e.preventDefault();
-
   var pages = queryPages();
   var newHash = getNewHash(e);
   var oldHash = getOldHash(e);
