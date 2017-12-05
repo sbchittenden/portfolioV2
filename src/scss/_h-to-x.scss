@@ -37,9 +37,11 @@
     cursor: pointer;
     &:not(.--is-open):before {
       top: -2px;
+      left: 0;
     }
     &:not(.--is-open):after {
       bottom: -3px;
+      left: 0;
     }
   }
 }
@@ -64,6 +66,7 @@
   background-color: black;
   border-radius: 0.1em;
   top: 0;
+  left: 0;
   transition: transform 0.15s linear, top 0.15s 0.15s ease-out,
     background-color 0.3s 0.2s ease-out;
 }
@@ -78,6 +81,7 @@
   transition: transform 0.15s linear, bottom 0.15s 0.15s ease-out,
     background-color 0.3s 0.2s ease-out;
   bottom: 0;
+  left: 0;
 }
 
 @keyframes to-close-top {

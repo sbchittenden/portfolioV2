@@ -5,6 +5,7 @@
   width: 50%;
   @media screen and (max-width: 720px) {
     width: 80%;
+    z-index: 100;
   }
 }
 
@@ -23,6 +24,12 @@ overflow: hidden;
   }
   animation: slideInLeft 400ms forwards ease-out;
   @media screen and (max-width: 720px) {
-    width: 35%;
+    width: 100%;
+    opacity: 0.4;
+    max-height: 60vh;
   }
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
 }
